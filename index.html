@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employe management</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div id="root">
+      <div class="left">
+        <form id="form">
+          <!-- <input type="number" name="employeeId" placeholder="Employee ID"> -->
+          <input type="text" name="name" placeholder="Employee Name" required />
+          <input type="number" name="salary" placeholder="Salary" required />
+          <input type="text" name="team" placeholder="Team" required />
+          <select name="role">
+            <option value="SDE">SDE</option>
+            <option value="QA">Quality Assurance</option>
+            <option value="PM">Product Manager</option>
+          </select>
+          <input type="text" name="companyname" placeholder="Company Name" />
+          <button>Create Employee</button>
+        </form>
+      </div>
+      <div class="right">
+        <table>
+          <thead>
+            <tr>
+                <th>employeeId</th>
+                <th>name</th>
+                <th>salary</th>
+                <th>team</th>
+                <th>role</th>
+                <th>companyname</th>
+                <th>options </th>
+            </tr>
+          </thead>
+          <tbody id="records-container" >
+            <!-- <tr>
+              <td>1234</td>
+              <td>shivam</td>
+              <td>748839</td>
+              <td>developer</td>
+              <td>SDE</td>
+              <td>acciojobs</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
